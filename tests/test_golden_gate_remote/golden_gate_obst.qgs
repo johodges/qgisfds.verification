@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis saveUser="egissi" saveDateTime="2021-12-28T12:15:50" version="3.22.2-Białowieża" saveUserFull="Emanuele Gissi" projectname="">
+<qgis saveUser="egissi" saveDateTime="2021-12-28T12:22:53" version="3.22.2-Białowieża" saveUserFull="Emanuele Gissi" projectname="">
   <homePath path=""/>
   <title></title>
   <autotransaction active="0"/>
@@ -1566,9 +1566,9 @@ def my_form_open(dialog, layer, feature):
       <chid type="QString">golden_gate</chid>
       <dem_layer type="QString">US_DEM2016_7f4e3268_2af5_44dd_83db_a9b2bbc7861e</dem_layer>
       <dem_sampling type="int">1</dem_sampling>
-      <export_obst type="bool">false</export_obst>
+      <export_obst type="bool">true</export_obst>
       <extent type="QString">-122.509448609,-122.467825037,37.817233198,37.849753575 [EPSG:4326]</extent>
-      <fds_path type="QString">./fds_geom</fds_path>
+      <fds_path type="QString">./fds_obst</fds_path>
       <fire_layer type="QString">fire_390aae48_29d8_41ca_bfd1_0f315fe35596</fire_layer>
       <fire_origin type="QString">-122.490034,37.828228 [EPSG:4326]</fire_origin>
       <landuse_layer type="QString">US_200F13_20_2c11ee9c_ccec_4ba8_a724_e67f5fa1a550</landuse_layer>
