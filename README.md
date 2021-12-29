@@ -4,5 +4,6 @@ This is the repository of verification tools for *qgis2fds*. Find the main repos
 
 ## How to verify the code
 
-Open the test projects in qgis and export them to FDS.
-
+ * Clone this repository on your Linux computer.
+ * Update the `test_path` variable in the `verify.py` Python script.
+ * Run the `verify.sh` bash script.
