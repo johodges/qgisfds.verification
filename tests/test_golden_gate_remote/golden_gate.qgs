@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis saveUser="egissi" saveDateTime="2021-12-28T12:15:32" version="3.22.2-Białowieża" saveUserFull="Emanuele Gissi" projectname="">
+<qgis saveDateTime="2021-12-29T14:54:58" version="3.22.2-Białowieża" saveUserFull="Emanuele Gissi" projectname="" saveUser="egissi">
   <homePath path=""/>
   <title></title>
   <autotransaction active="0"/>
@@ -22,32 +22,32 @@
     <customproperties>
       <Option/>
     </customproperties>
-    <layer-tree-layer legend_exp="" id="fire_390aae48_29d8_41ca_bfd1_0f315fe35596" providerKey="ogr" patch_size="-1,-1" checked="Qt::Checked" expanded="1" legend_split_behavior="0" source="./fire.shp" name="Fire">
+    <layer-tree-layer source="./fire.shp" legend_split_behavior="0" checked="Qt::Checked" id="fire_390aae48_29d8_41ca_bfd1_0f315fe35596" name="Fire" providerKey="ogr" expanded="1" legend_exp="" patch_size="-1,-1">
       <customproperties>
         <Option/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer legend_exp="" id="extent_c47fb780_eca1_4846_ad45_0edf908cf3ed" providerKey="ogr" patch_size="-1,-1" checked="Qt::Checked" expanded="1" legend_split_behavior="0" source="./extent.shp" name="Extent">
+    <layer-tree-layer source="./extent.shp" legend_split_behavior="0" checked="Qt::Checked" id="extent_c47fb780_eca1_4846_ad45_0edf908cf3ed" name="Extent" providerKey="ogr" expanded="1" legend_exp="" patch_size="-1,-1">
       <customproperties>
         <Option/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer legend_exp="" id="Google_Satellite_2cf6371c_065d_4040_824f_425e08e0e05f" providerKey="wms" patch_size="0,0" checked="Qt::Unchecked" expanded="1" legend_split_behavior="0" source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Ds%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=19&amp;zmin=0" name="Google Satellite">
+    <layer-tree-layer source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Ds%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=19&amp;zmin=0" legend_split_behavior="0" checked="Qt::Unchecked" id="Google_Satellite_2cf6371c_065d_4040_824f_425e08e0e05f" name="Google Satellite" providerKey="wms" expanded="1" legend_exp="" patch_size="0,0">
       <customproperties>
         <Option/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer legend_exp="" id="OpenStreetMap_dbb00f42_b25f_4ad8_85b6_0c53337cace2" providerKey="wms" patch_size="0,0" checked="Qt::Checked" expanded="1" legend_split_behavior="0" source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0" name="OpenStreetMap">
+    <layer-tree-layer source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0" legend_split_behavior="0" checked="Qt::Checked" id="OpenStreetMap_dbb00f42_b25f_4ad8_85b6_0c53337cace2" name="OpenStreetMap" providerKey="wms" expanded="1" legend_exp="" patch_size="0,0">
       <customproperties>
         <Option/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer legend_exp="" id="US_200F13_20_2c11ee9c_ccec_4ba8_a724_e67f5fa1a550" providerKey="wcs" patch_size="-1,-1" checked="Qt::Checked" expanded="0" legend_split_behavior="0" source="dpiMode=7&amp;identifier=US_200F13_20&amp;url=https://landfire.cr.usgs.gov/arcgis/services/Landfire/US_200/MapServer/WCSServer" name="US_200F13_20">
+    <layer-tree-layer source="dpiMode=7&amp;identifier=US_200F13_20&amp;url=https://landfire.cr.usgs.gov/arcgis/services/Landfire/US_200/MapServer/WCSServer" legend_split_behavior="0" checked="Qt::Checked" id="US_200F13_20_2c11ee9c_ccec_4ba8_a724_e67f5fa1a550" name="US_200F13_20" providerKey="wcs" expanded="0" legend_exp="" patch_size="-1,-1">
       <customproperties>
         <Option/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer legend_exp="" id="US_DEM2016_7f4e3268_2af5_44dd_83db_a9b2bbc7861e" providerKey="wcs" patch_size="0,0" checked="Qt::Checked" expanded="0" legend_split_behavior="0" source="dpiMode=7&amp;identifier=US_DEM2016&amp;url=https://landfire.cr.usgs.gov/arcgis/services/Landfire/US_other/MapServer/WCSServer" name="US_DEM2016">
+    <layer-tree-layer source="dpiMode=7&amp;identifier=US_DEM2016&amp;url=https://landfire.cr.usgs.gov/arcgis/services/Landfire/US_other/MapServer/WCSServer" legend_split_behavior="0" checked="Qt::Checked" id="US_DEM2016_7f4e3268_2af5_44dd_83db_a9b2bbc7861e" name="US_DEM2016" providerKey="wcs" expanded="0" legend_exp="" patch_size="0,0">
       <customproperties>
         <Option/>
       </customproperties>
@@ -61,10 +61,10 @@
       <item>fire_390aae48_29d8_41ca_bfd1_0f315fe35596</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings unit="1" intersection-snapping="0" enabled="0" type="1" minScale="0" maxScale="0" self-snapping="0" mode="2" tolerance="12" scaleDependencyMode="0">
+  <snapping-settings tolerance="12" scaleDependencyMode="0" minScale="0" mode="2" intersection-snapping="0" maxScale="0" type="1" self-snapping="0" unit="1" enabled="0">
     <individual-layer-settings>
-      <layer-setting units="1" id="fire_390aae48_29d8_41ca_bfd1_0f315fe35596" enabled="0" type="1" minScale="0" maxScale="0" tolerance="12"/>
-      <layer-setting units="1" id="extent_c47fb780_eca1_4846_ad45_0edf908cf3ed" enabled="0" type="1" minScale="0" maxScale="0" tolerance="12"/>
+      <layer-setting tolerance="12" minScale="0" id="extent_c47fb780_eca1_4846_ad45_0edf908cf3ed" units="1" maxScale="0" type="1" enabled="0"/>
+      <layer-setting tolerance="12" minScale="0" id="fire_390aae48_29d8_41ca_bfd1_0f315fe35596" units="1" maxScale="0" type="1" enabled="0"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
@@ -97,39 +97,39 @@
   <projectModels/>
   <legend updateDrawingOrder="true">
     <legendlayer drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0" open="true" name="Fire">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile layerid="fire_390aae48_29d8_41ca_bfd1_0f315fe35596" visible="1" isInOverview="0"/>
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="1" isInOverview="0" layerid="fire_390aae48_29d8_41ca_bfd1_0f315fe35596"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0" open="true" name="Extent">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile layerid="extent_c47fb780_eca1_4846_ad45_0edf908cf3ed" visible="1" isInOverview="0"/>
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="1" isInOverview="0" layerid="extent_c47fb780_eca1_4846_ad45_0edf908cf3ed"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" checked="Qt::Unchecked" showFeatureCount="0" open="true" name="Google Satellite">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile layerid="Google_Satellite_2cf6371c_065d_4040_824f_425e08e0e05f" visible="0" isInOverview="0"/>
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="0" isInOverview="0" layerid="Google_Satellite_2cf6371c_065d_4040_824f_425e08e0e05f"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0" open="true" name="OpenStreetMap">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile layerid="OpenStreetMap_dbb00f42_b25f_4ad8_85b6_0c53337cace2" visible="1" isInOverview="0"/>
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="1" isInOverview="0" layerid="OpenStreetMap_dbb00f42_b25f_4ad8_85b6_0c53337cace2"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0" open="false" name="US_200F13_20">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile layerid="US_200F13_20_2c11ee9c_ccec_4ba8_a724_e67f5fa1a550" visible="1" isInOverview="0"/>
+      <filegroup hidden="false" open="false">
+        <legendlayerfile visible="1" isInOverview="0" layerid="US_200F13_20_2c11ee9c_ccec_4ba8_a724_e67f5fa1a550"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0" open="false" name="US_DEM2016">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile layerid="US_DEM2016_7f4e3268_2af5_44dd_83db_a9b2bbc7861e" visible="1" isInOverview="0"/>
+      <filegroup hidden="false" open="false">
+        <legendlayerfile visible="1" isInOverview="0" layerid="US_DEM2016_7f4e3268_2af5_44dd_83db_a9b2bbc7861e"/>
       </filegroup>
     </legendlayer>
   </legend>
   <mapViewDocks/>
   <mapViewDocks3D/>
-  <main-annotation-layer autoRefreshEnabled="0" legendPlaceholderImage="" refreshOnNotifyMessage="" type="annotation" refreshOnNotifyEnabled="0" autoRefreshTime="0">
+  <main-annotation-layer refreshOnNotifyEnabled="0" autoRefreshEnabled="0" type="annotation" legendPlaceholderImage="" autoRefreshTime="0" refreshOnNotifyMessage="">
     <id>Annotations_79af40c0_d377_4f12_b4ad_08637ba30763</id>
     <datasource></datasource>
     <keywordList>
@@ -180,7 +180,7 @@
     <paintEffect/>
   </main-annotation-layer>
   <projectlayers>
-    <maplayer hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" legendPlaceholderImage="" refreshOnNotifyMessage="" type="raster" refreshOnNotifyEnabled="0" maxScale="0" minScale="1e+08" styleCategories="AllStyleCategories" autoRefreshTime="0">
+    <maplayer refreshOnNotifyEnabled="0" minScale="1e+08" autoRefreshEnabled="0" maxScale="0" styleCategories="AllStyleCategories" type="raster" legendPlaceholderImage="" autoRefreshTime="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0">
       <extent>
         <xmin>-20037508.34278924390673637</xmin>
         <ymin>-20037508.34278924763202667</ymin>
@@ -239,7 +239,7 @@
       </resourceMetadata>
       <provider>wms</provider>
       <noData>
-        <noDataList useSrcNoData="0" bandNo="1"/>
+        <noDataList bandNo="1" useSrcNoData="0"/>
       </noData>
       <map-layer-style-manager current="default">
         <map-layer-style name="default"/>
@@ -251,7 +251,7 @@
         <Searchable>0</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal enabled="0" mode="0" fetchMode="0">
+      <temporal mode="0" enabled="0" fetchMode="0">
         <fixedRange>
           <start></start>
           <end></end>
@@ -271,9 +271,9 @@
       </pipe-data-defined-properties>
       <pipe>
         <provider>
-          <resampling zoomedInResamplingMethod="nearestNeighbour" maxOversampling="2" enabled="false" zoomedOutResamplingMethod="nearestNeighbour"/>
+          <resampling zoomedOutResamplingMethod="nearestNeighbour" zoomedInResamplingMethod="nearestNeighbour" maxOversampling="2" enabled="false"/>
         </provider>
-        <rasterrenderer type="singlebandcolordata" opacity="1" nodataColor="" band="1" alphaBand="-1">
+        <rasterrenderer type="singlebandcolordata" band="1" opacity="1" alphaBand="-1" nodataColor="">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>None</limits>
@@ -284,14 +284,14 @@
             <stdDevFactor>2</stdDevFactor>
           </minMaxOrigin>
         </rasterrenderer>
-        <brightnesscontrast brightness="0" gamma="1" contrast="0"/>
-        <huesaturation grayscaleMode="0" saturation="0" colorizeBlue="128" colorizeRed="255" invertColors="0" colorizeStrength="100" colorizeOn="0" colorizeGreen="128"/>
+        <brightnesscontrast contrast="0" brightness="0" gamma="1"/>
+        <huesaturation invertColors="0" colorizeGreen="128" colorizeOn="0" colorizeStrength="100" saturation="0" colorizeBlue="128" grayscaleMode="0" colorizeRed="255"/>
         <rasterresampler maxOversampling="2"/>
         <resamplingStage>resamplingFilter</resamplingStage>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" legendPlaceholderImage="" refreshOnNotifyMessage="" type="raster" refreshOnNotifyEnabled="0" maxScale="0" minScale="1e+08" styleCategories="AllStyleCategories" autoRefreshTime="0">
+    <maplayer refreshOnNotifyEnabled="0" minScale="1e+08" autoRefreshEnabled="0" maxScale="0" styleCategories="AllStyleCategories" type="raster" legendPlaceholderImage="" autoRefreshTime="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0">
       <extent>
         <xmin>-20037508.34278924390673637</xmin>
         <ymin>-20037508.34278924763202667</ymin>
@@ -356,7 +356,7 @@
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial maxx="0" miny="0" maxz="0" dimensions="2" minx="0" maxy="0" crs="" minz="0"/>
+          <spatial minx="0" miny="0" dimensions="2" crs="" minz="0" maxy="0" maxz="0" maxx="0"/>
           <temporal>
             <period>
               <start></start>
@@ -367,7 +367,7 @@
       </resourceMetadata>
       <provider>wms</provider>
       <noData>
-        <noDataList useSrcNoData="0" bandNo="1"/>
+        <noDataList bandNo="1" useSrcNoData="0"/>
       </noData>
       <map-layer-style-manager current="default">
         <map-layer-style name="default"/>
@@ -379,7 +379,7 @@
         <Searchable>0</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal enabled="0" mode="0" fetchMode="0">
+      <temporal mode="0" enabled="0" fetchMode="0">
         <fixedRange>
           <start></start>
           <end></end>
@@ -402,9 +402,9 @@
       </pipe-data-defined-properties>
       <pipe>
         <provider>
-          <resampling zoomedInResamplingMethod="nearestNeighbour" maxOversampling="2" enabled="false" zoomedOutResamplingMethod="nearestNeighbour"/>
+          <resampling zoomedOutResamplingMethod="nearestNeighbour" zoomedInResamplingMethod="nearestNeighbour" maxOversampling="2" enabled="false"/>
         </provider>
-        <rasterrenderer type="singlebandcolordata" opacity="1" nodataColor="" band="1" alphaBand="-1">
+        <rasterrenderer type="singlebandcolordata" band="1" opacity="1" alphaBand="-1" nodataColor="">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>None</limits>
@@ -415,14 +415,14 @@
             <stdDevFactor>2</stdDevFactor>
           </minMaxOrigin>
         </rasterrenderer>
-        <brightnesscontrast brightness="0" gamma="1" contrast="0"/>
-        <huesaturation grayscaleMode="0" saturation="0" colorizeBlue="128" colorizeRed="255" invertColors="0" colorizeStrength="100" colorizeOn="0" colorizeGreen="128"/>
-        <rasterresampler maxOversampling="2" zoomedInResampler="bilinear"/>
+        <brightnesscontrast contrast="0" brightness="0" gamma="1"/>
+        <huesaturation invertColors="0" colorizeGreen="128" colorizeOn="0" colorizeStrength="100" saturation="0" colorizeBlue="128" grayscaleMode="0" colorizeRed="255"/>
+        <rasterresampler zoomedInResampler="bilinear" maxOversampling="2"/>
         <resamplingStage>resamplingFilter</resamplingStage>
       </pipe>
       <blendMode>6</blendMode>
     </maplayer>
-    <maplayer hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" legendPlaceholderImage="" refreshOnNotifyMessage="" type="raster" refreshOnNotifyEnabled="0" maxScale="0" minScale="1e+08" styleCategories="AllStyleCategories" autoRefreshTime="0">
+    <maplayer refreshOnNotifyEnabled="0" minScale="1e+08" autoRefreshEnabled="0" maxScale="0" styleCategories="AllStyleCategories" type="raster" legendPlaceholderImage="" autoRefreshTime="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0">
       <extent>
         <xmin>-2362425</xmin>
         <ymin>258945</ymin>
@@ -487,7 +487,7 @@
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial maxx="0" miny="0" maxz="0" dimensions="2" minx="0" maxy="0" crs="" minz="0"/>
+          <spatial minx="0" miny="0" dimensions="2" crs="" minz="0" maxy="0" maxz="0" maxx="0"/>
           <temporal>
             <period>
               <start></start>
@@ -498,7 +498,7 @@
       </resourceMetadata>
       <provider>wcs</provider>
       <noData>
-        <noDataList useSrcNoData="1" bandNo="1"/>
+        <noDataList bandNo="1" useSrcNoData="1"/>
       </noData>
       <map-layer-style-manager current="default">
         <map-layer-style name="default"/>
@@ -510,7 +510,7 @@
         <Searchable>0</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal enabled="0" mode="0" fetchMode="0">
+      <temporal mode="0" enabled="0" fetchMode="0">
         <fixedRange>
           <start></start>
           <end></end>
@@ -533,9 +533,9 @@
       </pipe-data-defined-properties>
       <pipe>
         <provider>
-          <resampling zoomedInResamplingMethod="nearestNeighbour" maxOversampling="2" enabled="false" zoomedOutResamplingMethod="nearestNeighbour"/>
+          <resampling zoomedOutResamplingMethod="nearestNeighbour" zoomedInResamplingMethod="nearestNeighbour" maxOversampling="2" enabled="false"/>
         </provider>
-        <rasterrenderer type="paletted" opacity="1" nodataColor="" band="1" alphaBand="-1">
+        <rasterrenderer type="paletted" band="1" opacity="1" alphaBand="-1" nodataColor="">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>None</limits>
@@ -546,24 +546,24 @@
             <stdDevFactor>2</stdDevFactor>
           </minMaxOrigin>
           <colorPalette>
-            <paletteEntry value="0" label="NO_DATA" color="#ffffff" alpha="255"/>
-            <paletteEntry value="1" label="FBFM01" color="#fffed4" alpha="255"/>
-            <paletteEntry value="2" label="FBFM02" color="#fffd66" alpha="255"/>
-            <paletteEntry value="3" label="FBFM03" color="#ecd463" alpha="255"/>
-            <paletteEntry value="4" label="FBFM04" color="#fec177" alpha="255"/>
-            <paletteEntry value="5" label="FBFM05" color="#f9c55c" alpha="255"/>
-            <paletteEntry value="6" label="FBFM06" color="#d9c498" alpha="255"/>
-            <paletteEntry value="7" label="FBFM07" color="#aa9b7f" alpha="255"/>
-            <paletteEntry value="8" label="FBFM08" color="#e5fdd6" alpha="255"/>
-            <paletteEntry value="9" label="FBFM09" color="#a2bf5a" alpha="255"/>
-            <paletteEntry value="10" label="FBFM10" color="#729a55" alpha="255"/>
-            <paletteEntry value="11" label="FBFM11" color="#ebd4fd" alpha="255"/>
-            <paletteEntry value="12" label="FBFM12" color="#a3b1f3" alpha="255"/>
-            <paletteEntry value="91" label="Urban" color="#ba7750" alpha="255"/>
-            <paletteEntry value="92" label="Snow/Ice" color="#eaeaea" alpha="255"/>
-            <paletteEntry value="93" label="Agricolture" color="#fdf2f2" alpha="255"/>
-            <paletteEntry value="98" label="Water" color="#89b7dd" alpha="255"/>
-            <paletteEntry value="99" label="Barren" color="#85999c" alpha="255"/>
+            <paletteEntry value="0" color="#ffffff" alpha="255" label="NO_DATA"/>
+            <paletteEntry value="1" color="#fffed4" alpha="255" label="FBFM01"/>
+            <paletteEntry value="2" color="#fffd66" alpha="255" label="FBFM02"/>
+            <paletteEntry value="3" color="#ecd463" alpha="255" label="FBFM03"/>
+            <paletteEntry value="4" color="#fec177" alpha="255" label="FBFM04"/>
+            <paletteEntry value="5" color="#f9c55c" alpha="255" label="FBFM05"/>
+            <paletteEntry value="6" color="#d9c498" alpha="255" label="FBFM06"/>
+            <paletteEntry value="7" color="#aa9b7f" alpha="255" label="FBFM07"/>
+            <paletteEntry value="8" color="#e5fdd6" alpha="255" label="FBFM08"/>
+            <paletteEntry value="9" color="#a2bf5a" alpha="255" label="FBFM09"/>
+            <paletteEntry value="10" color="#729a55" alpha="255" label="FBFM10"/>
+            <paletteEntry value="11" color="#ebd4fd" alpha="255" label="FBFM11"/>
+            <paletteEntry value="12" color="#a3b1f3" alpha="255" label="FBFM12"/>
+            <paletteEntry value="91" color="#ba7750" alpha="255" label="Urban"/>
+            <paletteEntry value="92" color="#eaeaea" alpha="255" label="Snow/Ice"/>
+            <paletteEntry value="93" color="#fdf2f2" alpha="255" label="Agricolture"/>
+            <paletteEntry value="98" color="#89b7dd" alpha="255" label="Water"/>
+            <paletteEntry value="99" color="#85999c" alpha="255" label="Barren"/>
           </colorPalette>
           <colorramp type="gradient" name="[source]">
             <Option type="Map">
@@ -580,14 +580,14 @@
             <prop k="stops" v="0.25;253,174,97,255:0.5;255,255,191,255:0.75;171,221,164,255"/>
           </colorramp>
         </rasterrenderer>
-        <brightnesscontrast brightness="0" gamma="1" contrast="0"/>
-        <huesaturation grayscaleMode="0" saturation="0" colorizeBlue="128" colorizeRed="255" invertColors="0" colorizeStrength="100" colorizeOn="0" colorizeGreen="128"/>
+        <brightnesscontrast contrast="0" brightness="0" gamma="1"/>
+        <huesaturation invertColors="0" colorizeGreen="128" colorizeOn="0" colorizeStrength="100" saturation="0" colorizeBlue="128" grayscaleMode="0" colorizeRed="255"/>
         <rasterresampler maxOversampling="2"/>
         <resamplingStage>resamplingFilter</resamplingStage>
       </pipe>
       <blendMode>6</blendMode>
     </maplayer>
-    <maplayer hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" legendPlaceholderImage="" refreshOnNotifyMessage="" type="raster" refreshOnNotifyEnabled="0" maxScale="0" minScale="1e+08" styleCategories="AllStyleCategories" autoRefreshTime="0">
+    <maplayer refreshOnNotifyEnabled="0" minScale="1e+08" autoRefreshEnabled="0" maxScale="0" styleCategories="AllStyleCategories" type="raster" legendPlaceholderImage="" autoRefreshTime="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0">
       <extent>
         <xmin>-2362425</xmin>
         <ymin>258945</ymin>
@@ -652,7 +652,7 @@
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial maxx="0" miny="0" maxz="0" dimensions="2" minx="0" maxy="0" crs="" minz="0"/>
+          <spatial minx="0" miny="0" dimensions="2" crs="" minz="0" maxy="0" maxz="0" maxx="0"/>
           <temporal>
             <period>
               <start></start>
@@ -663,7 +663,7 @@
       </resourceMetadata>
       <provider>wcs</provider>
       <noData>
-        <noDataList useSrcNoData="1" bandNo="1"/>
+        <noDataList bandNo="1" useSrcNoData="1"/>
       </noData>
       <map-layer-style-manager current="default">
         <map-layer-style name="default"/>
@@ -675,7 +675,7 @@
         <Searchable>0</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal enabled="0" mode="0" fetchMode="0">
+      <temporal mode="0" enabled="0" fetchMode="0">
         <fixedRange>
           <start></start>
           <end></end>
@@ -698,9 +698,9 @@
       </pipe-data-defined-properties>
       <pipe>
         <provider>
-          <resampling zoomedInResamplingMethod="nearestNeighbour" maxOversampling="2" enabled="false" zoomedOutResamplingMethod="nearestNeighbour"/>
+          <resampling zoomedOutResamplingMethod="nearestNeighbour" zoomedInResamplingMethod="nearestNeighbour" maxOversampling="2" enabled="false"/>
         </provider>
-        <rasterrenderer angle="45" type="hillshade" zfactor="1" azimuth="315" multidirection="0" opacity="1" nodataColor="" band="1" alphaBand="-1">
+        <rasterrenderer azimuth="315" multidirection="0" angle="45" zfactor="1" type="hillshade" band="1" opacity="1" alphaBand="-1" nodataColor="">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>None</limits>
@@ -711,14 +711,14 @@
             <stdDevFactor>2</stdDevFactor>
           </minMaxOrigin>
         </rasterrenderer>
-        <brightnesscontrast brightness="0" gamma="1" contrast="0"/>
-        <huesaturation grayscaleMode="0" saturation="0" colorizeBlue="128" colorizeRed="255" invertColors="0" colorizeStrength="100" colorizeOn="0" colorizeGreen="128"/>
-        <rasterresampler maxOversampling="2" zoomedInResampler="bilinear"/>
+        <brightnesscontrast contrast="0" brightness="0" gamma="1"/>
+        <huesaturation invertColors="0" colorizeGreen="128" colorizeOn="0" colorizeStrength="100" saturation="0" colorizeBlue="128" grayscaleMode="0" colorizeRed="255"/>
+        <rasterresampler zoomedInResampler="bilinear" maxOversampling="2"/>
         <resamplingStage>resamplingFilter</resamplingStage>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer labelsEnabled="0" autoRefreshEnabled="0" wkbType="MultiPolygon" symbologyReferenceScale="-1" autoRefreshTime="0" type="vector" minScale="100000000" legendPlaceholderImage="" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" simplifyAlgorithm="0" simplifyDrawingTol="1" refreshOnNotifyEnabled="0" maxScale="0" simplifyMaxScale="1" simplifyDrawingHints="1" geometry="Polygon" simplifyLocal="1" readOnly="0" refreshOnNotifyMessage="">
+    <maplayer simplifyDrawingHints="1" simplifyMaxScale="1" minScale="100000000" simplifyDrawingTol="1" labelsEnabled="0" autoRefreshTime="0" maxScale="0" type="vector" geometry="Polygon" symbologyReferenceScale="-1" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" wkbType="MultiPolygon" simplifyLocal="1" autoRefreshEnabled="0" refreshOnNotifyEnabled="0" readOnly="0" legendPlaceholderImage="" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0">
       <extent>
         <xmin>-122.50944860910168188</xmin>
         <ymin>37.81723319756387269</ymin>
@@ -783,7 +783,7 @@
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial maxx="0" miny="0" maxz="0" dimensions="2" minx="0" maxy="0" crs="" minz="0"/>
+          <spatial minx="0" miny="0" dimensions="2" crs="" minz="0" maxy="0" maxz="0" maxx="0"/>
           <temporal>
             <period>
               <start></start>
@@ -808,15 +808,15 @@
         <Searchable>1</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal endExpression="" durationField="" endField="" enabled="0" startField="" accumulate="0" durationUnit="min" limitMode="0" fixedDuration="0" startExpression="" mode="0">
+      <temporal durationUnit="min" limitMode="0" mode="0" startExpression="" durationField="" endField="" endExpression="" accumulate="0" fixedDuration="0" startField="" enabled="0">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <renderer-v2 forceraster="0" enableorderby="0" type="singleSymbol" symbollevels="0" referencescale="-1">
+      <renderer-v2 referencescale="-1" symbollevels="0" type="singleSymbol" forceraster="0" enableorderby="0">
         <symbols>
-          <symbol force_rhr="0" type="fill" clip_to_extent="1" name="0" alpha="1">
+          <symbol force_rhr="0" clip_to_extent="1" type="fill" name="0" alpha="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option value="" type="QString" name="name"/>
@@ -824,7 +824,7 @@
                 <Option value="collection" type="QString" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleLine" pass="0" enabled="1" locked="0">
+            <layer class="SimpleLine" pass="0" locked="0" enabled="1">
               <Option type="Map">
                 <Option value="0" type="QString" name="align_dash_pattern"/>
                 <Option value="square" type="QString" name="capstyle"/>
@@ -905,11 +905,11 @@
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory spacingUnitScale="3x:0,0,0,0,0,0" scaleBasedVisibility="0" enabled="0" direction="0" height="15" showAxis="1" labelPlacementMethod="XHeight" width="15" scaleDependency="Area" opacity="1" lineSizeType="MM" barWidth="5" sizeScale="3x:0,0,0,0,0,0" backgroundColor="#ffffff" backgroundAlpha="255" sizeType="MM" spacingUnit="MM" spacing="5" diagramOrientation="Up" penColor="#000000" lineSizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0" penWidth="0" penAlpha="255" minimumSize="0" rotationOffset="270" maxScaleDenominator="1e+08">
+        <DiagramCategory sizeScale="3x:0,0,0,0,0,0" spacingUnitScale="3x:0,0,0,0,0,0" penWidth="0" backgroundAlpha="255" minimumSize="0" showAxis="1" spacing="5" direction="0" sizeType="MM" spacingUnit="MM" enabled="0" width="15" barWidth="5" maxScaleDenominator="1e+08" labelPlacementMethod="XHeight" diagramOrientation="Up" lineSizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0" scaleDependency="Area" rotationOffset="270" opacity="1" lineSizeType="MM" height="15" backgroundColor="#ffffff" scaleBasedVisibility="0" penAlpha="255" penColor="#000000">
           <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
-          <attribute field="" label="" color="#000000"/>
+          <attribute field="" color="#000000" label=""/>
           <axisSymbol>
-            <symbol force_rhr="0" type="line" clip_to_extent="1" name="" alpha="1">
+            <symbol force_rhr="0" clip_to_extent="1" type="line" name="" alpha="1">
               <data_defined_properties>
                 <Option type="Map">
                   <Option value="" type="QString" name="name"/>
@@ -917,7 +917,7 @@
                   <Option value="collection" type="QString" name="type"/>
                 </Option>
               </data_defined_properties>
-              <layer class="SimpleLine" pass="0" enabled="1" locked="0">
+              <layer class="SimpleLine" pass="0" locked="0" enabled="1">
                 <Option type="Map">
                   <Option value="0" type="QString" name="align_dash_pattern"/>
                   <Option value="square" type="QString" name="capstyle"/>
@@ -986,7 +986,7 @@
           </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings priority="0" placement="1" zIndex="0" obstacle="0" linePlacementFlags="18" dist="0" showAll="1">
+      <DiagramLayerSettings obstacle="0" placement="1" zIndex="0" dist="0" priority="0" linePlacementFlags="18" showAll="1">
         <properties>
           <Option type="Map">
             <Option value="" type="QString" name="name"/>
@@ -1005,7 +1005,7 @@
           </Option>
         </checkConfiguration>
       </geometryOptions>
-      <legend showLabelLegend="0" type="default-vector"/>
+      <legend type="default-vector" showLabelLegend="0"/>
       <referencedLayers/>
       <fieldConfiguration>
         <field configurationFlags="None" name="id">
@@ -1017,25 +1017,25 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias index="0" field="id" name=""/>
+        <alias field="id" name="" index="0"/>
       </aliases>
       <defaults>
-        <default applyOnUpdate="0" field="id" expression=""/>
+        <default field="id" applyOnUpdate="0" expression=""/>
       </defaults>
       <constraints>
-        <constraint constraints="0" notnull_strength="0" exp_strength="0" field="id" unique_strength="0"/>
+        <constraint field="id" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="id" exp="" desc=""/>
+        <constraint field="id" desc="" exp=""/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions>
-        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
       <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
         <columns>
-          <column width="-1" type="field" name="id" hidden="0"/>
-          <column width="-1" type="actions" hidden="1"/>
+          <column hidden="0" type="field" name="id" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
@@ -1078,7 +1078,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>"id"</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer labelsEnabled="0" autoRefreshEnabled="0" wkbType="MultiPolygon" symbologyReferenceScale="-1" autoRefreshTime="0" type="vector" minScale="100000000" legendPlaceholderImage="" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" simplifyAlgorithm="0" simplifyDrawingTol="1" refreshOnNotifyEnabled="0" maxScale="0" simplifyMaxScale="1" simplifyDrawingHints="1" geometry="Polygon" simplifyLocal="1" readOnly="0" refreshOnNotifyMessage="">
+    <maplayer simplifyDrawingHints="1" simplifyMaxScale="1" minScale="100000000" simplifyDrawingTol="1" labelsEnabled="0" autoRefreshTime="0" maxScale="0" type="vector" geometry="Polygon" symbologyReferenceScale="-1" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" wkbType="MultiPolygon" simplifyLocal="1" autoRefreshEnabled="0" refreshOnNotifyEnabled="0" readOnly="0" legendPlaceholderImage="" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0">
       <extent>
         <xmin>-122.4895159726777365</xmin>
         <ymin>37.82948073795136423</ymin>
@@ -1143,7 +1143,7 @@ def my_form_open(dialog, layer, feature):
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial maxx="0" miny="0" maxz="0" dimensions="2" minx="0" maxy="0" crs="" minz="0"/>
+          <spatial minx="0" miny="0" dimensions="2" crs="" minz="0" maxy="0" maxz="0" maxx="0"/>
           <temporal>
             <period>
               <start></start>
@@ -1168,15 +1168,15 @@ def my_form_open(dialog, layer, feature):
         <Searchable>1</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal endExpression="" durationField="" endField="" enabled="0" startField="" accumulate="0" durationUnit="min" limitMode="0" fixedDuration="0" startExpression="" mode="0">
+      <temporal durationUnit="min" limitMode="0" mode="0" startExpression="" durationField="" endField="" endExpression="" accumulate="0" fixedDuration="0" startField="" enabled="0">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <renderer-v2 forceraster="0" enableorderby="0" type="singleSymbol" symbollevels="0" referencescale="-1">
+      <renderer-v2 referencescale="-1" symbollevels="0" type="singleSymbol" forceraster="0" enableorderby="0">
         <symbols>
-          <symbol force_rhr="0" type="fill" clip_to_extent="1" name="0" alpha="1">
+          <symbol force_rhr="0" clip_to_extent="1" type="fill" name="0" alpha="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option value="" type="QString" name="name"/>
@@ -1184,7 +1184,7 @@ def my_form_open(dialog, layer, feature):
                 <Option value="collection" type="QString" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleLine" pass="0" enabled="1" locked="0">
+            <layer class="SimpleLine" pass="0" locked="0" enabled="1">
               <Option type="Map">
                 <Option value="0" type="QString" name="align_dash_pattern"/>
                 <Option value="square" type="QString" name="capstyle"/>
@@ -1265,11 +1265,11 @@ def my_form_open(dialog, layer, feature):
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory spacingUnitScale="3x:0,0,0,0,0,0" scaleBasedVisibility="0" enabled="0" direction="0" height="15" showAxis="1" labelPlacementMethod="XHeight" width="15" scaleDependency="Area" opacity="1" lineSizeType="MM" barWidth="5" sizeScale="3x:0,0,0,0,0,0" backgroundColor="#ffffff" backgroundAlpha="255" sizeType="MM" spacingUnit="MM" spacing="5" diagramOrientation="Up" penColor="#000000" lineSizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0" penWidth="0" penAlpha="255" minimumSize="0" rotationOffset="270" maxScaleDenominator="1e+08">
+        <DiagramCategory sizeScale="3x:0,0,0,0,0,0" spacingUnitScale="3x:0,0,0,0,0,0" penWidth="0" backgroundAlpha="255" minimumSize="0" showAxis="1" spacing="5" direction="0" sizeType="MM" spacingUnit="MM" enabled="0" width="15" barWidth="5" maxScaleDenominator="1e+08" labelPlacementMethod="XHeight" diagramOrientation="Up" lineSizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0" scaleDependency="Area" rotationOffset="270" opacity="1" lineSizeType="MM" height="15" backgroundColor="#ffffff" scaleBasedVisibility="0" penAlpha="255" penColor="#000000">
           <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
-          <attribute field="" label="" color="#000000"/>
+          <attribute field="" color="#000000" label=""/>
           <axisSymbol>
-            <symbol force_rhr="0" type="line" clip_to_extent="1" name="" alpha="1">
+            <symbol force_rhr="0" clip_to_extent="1" type="line" name="" alpha="1">
               <data_defined_properties>
                 <Option type="Map">
                   <Option value="" type="QString" name="name"/>
@@ -1277,7 +1277,7 @@ def my_form_open(dialog, layer, feature):
                   <Option value="collection" type="QString" name="type"/>
                 </Option>
               </data_defined_properties>
-              <layer class="SimpleLine" pass="0" enabled="1" locked="0">
+              <layer class="SimpleLine" pass="0" locked="0" enabled="1">
                 <Option type="Map">
                   <Option value="0" type="QString" name="align_dash_pattern"/>
                   <Option value="square" type="QString" name="capstyle"/>
@@ -1346,7 +1346,7 @@ def my_form_open(dialog, layer, feature):
           </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings priority="0" placement="1" zIndex="0" obstacle="0" linePlacementFlags="18" dist="0" showAll="1">
+      <DiagramLayerSettings obstacle="0" placement="1" zIndex="0" dist="0" priority="0" linePlacementFlags="18" showAll="1">
         <properties>
           <Option type="Map">
             <Option value="" type="QString" name="name"/>
@@ -1365,7 +1365,7 @@ def my_form_open(dialog, layer, feature):
           </Option>
         </checkConfiguration>
       </geometryOptions>
-      <legend showLabelLegend="0" type="default-vector"/>
+      <legend type="default-vector" showLabelLegend="0"/>
       <referencedLayers/>
       <fieldConfiguration>
         <field configurationFlags="None" name="id">
@@ -1377,25 +1377,25 @@ def my_form_open(dialog, layer, feature):
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias index="0" field="id" name=""/>
+        <alias field="id" name="" index="0"/>
       </aliases>
       <defaults>
-        <default applyOnUpdate="0" field="id" expression=""/>
+        <default field="id" applyOnUpdate="0" expression=""/>
       </defaults>
       <constraints>
-        <constraint constraints="0" notnull_strength="0" exp_strength="0" field="id" unique_strength="0"/>
+        <constraint field="id" notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="id" exp="" desc=""/>
+        <constraint field="id" desc="" exp=""/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions>
-        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
       <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
         <columns>
-          <column width="-1" type="field" name="id" hidden="0"/>
-          <column width="-1" type="actions" hidden="1"/>
+          <column hidden="0" type="field" name="id" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
@@ -1433,7 +1433,7 @@ def my_form_open(dialog, layer, feature):
         <field labelOnTop="0" name="id"/>
       </labelOnTop>
       <reuseLastValue>
-        <field reuseLastValue="0" name="id"/>
+        <field name="id" reuseLastValue="0"/>
       </reuseLastValue>
       <dataDefinedFieldProperties/>
       <widgets/>
@@ -1568,7 +1568,7 @@ def my_form_open(dialog, layer, feature):
       <dem_sampling type="int">1</dem_sampling>
       <export_obst type="bool">false</export_obst>
       <extent type="QString">-122.509448609,-122.467825037,37.817233198,37.849753575 [EPSG:4326]</extent>
-      <fds_path type="QString">./fds_geom</fds_path>
+      <fds_path type="QString">./fds</fds_path>
       <fire_layer type="QString">fire_390aae48_29d8_41ca_bfd1_0f315fe35596</fire_layer>
       <fire_origin type="QString">-122.490034,37.828228 [EPSG:4326]</fire_origin>
       <landuse_layer type="QString">US_200F13_20_2c11ee9c_ccec_4ba8_a724_e67f5fa1a550</landuse_layer>
@@ -1646,7 +1646,7 @@ def my_form_open(dialog, layer, feature):
   <Bookmarks/>
   <ProjectViewSettings UseProjectScales="0">
     <Scales/>
-    <DefaultViewExtent ymax="37.8896650733668281" ymin="37.77481272033749349" xmin="-122.52982992489380365" xmax="-122.44287872189345023">
+    <DefaultViewExtent ymax="37.85297495563219883" xmin="-122.52982992489380365" ymin="37.81150283807212276" xmax="-122.44287872189345023">
       <spatialrefsys>
         <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
         <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -1660,7 +1660,7 @@ def my_form_open(dialog, layer, feature):
       </spatialrefsys>
     </DefaultViewExtent>
   </ProjectViewSettings>
-  <ProjectTimeSettings cumulativeTemporalRange="0" timeStep="1" frameRate="1" timeStepUnit="h"/>
+  <ProjectTimeSettings timeStepUnit="h" frameRate="1" cumulativeTemporalRange="0" timeStep="1"/>
   <ProjectDisplaySettings>
     <BearingFormat id="bearing">
       <Option type="Map">
