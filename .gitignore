@@ -63,3 +63,10 @@ verification/verification.sh
 *.prt5
 *.prt5.bnd
 *.zip
+
+# Generated geotiffs
+*_CLIPPED.tif*
+*_FILLED.tif*
+*_CLIPPED.gpkg*
+*_FULL.gpkg*
+*_CLIPPED_UTM.tif*
