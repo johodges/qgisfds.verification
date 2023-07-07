@@ -4,12 +4,22 @@ from qgis.core import QgsProject
 from qgis import processing
 from qgis.utils import iface
 
+try:
+    import git
+    systemdir = os.path.join(os.sep.join(__file__.split(os.sep)[:-2]), 'qgis2fds')
+    repo = git.Repo(systemdir)
+    sha = repo.head.object.hexsha
+    githash = sha[:7]
+    if repo.is_dirty():
+        githash = githash + '-dirty'
+except:
+    githash = ''
 
 def main():
-    test_path = "/home/egissi/github/qgisfds.verification/tests/"
+    test_path = "tests/"
     algorithm = "Export to NIST FDS:Export terrain"
     project = QgsProject.instance()
-
+    print(algorithm)
     # Test
     test_name = "Export GEOM from cern_meyrin"
     test_dir = "test_cern_meyrin"
@@ -17,11 +27,7 @@ def main():
     parameters = {
         "cell_size": 1,
         "chid": "cern_meyrin",
-        "dem_layer": os.path.join(
-            test_path,
-            test_dir,
-            "format_6_grid_asc_meyrin_dtm_20200522_122939/MN_Surface_2017_GRID.asc",
-        ),
+        "dem_layer": os.path.join(test_path,test_dir,"data_layers/dem_layer.tif"),
         "dem_sampling": 2,
         "export_obst": False,
         "extent": "6.048008498,6.049552799,46.232493265,46.233460112 [EPSG:4326]",
@@ -36,7 +42,7 @@ def main():
         "tex_pixel_size": 0.1,
         "wind_filepath": "",
     }
-
+    
     test(
         project=project,
         test_name=test_name,
@@ -46,43 +52,7 @@ def main():
         algorithm=algorithm,
         parameters=parameters,
     )
-
-    # Test
-    test_name = "Export OBST from cern_meyrin"
-    test_filename = "cern_meyrin.qgs"
-    parameters = {
-        "cell_size": 1,
-        "chid": "cern_meyrin",
-        "dem_layer": os.path.join(
-            test_path,
-            test_dir,
-            "format_6_grid_asc_meyrin_dtm_20200522_122939/MN_Surface_2017_GRID.asc",
-        ),
-        "dem_sampling": 2,
-        "export_obst": True,
-        "extent": "6.048008498,6.049552799,46.232493265,46.233460112 [EPSG:4326]",
-        "fds_path": "./fds_obst",
-        "fire_layer": None,
-        "landuse_layer": None,
-        "landuse_type_filepath": "",
-        "nmesh": 4,
-        "origin": None,
-        "sampling_layer": "TEMPORARY_OUTPUT",
-        "tex_layer": None,
-        "tex_pixel_size": 0.1,
-        "wind_filepath": "",
-    }
-
-    test(
-        project=project,
-        test_name=test_name,
-        test_path=test_path,
-        test_dir=test_dir,
-        test_filename=test_filename,
-        algorithm=algorithm,
-        parameters=parameters,
-    )
-
+    
     # Test
 
     test_name = "Export GEOM from test_golden_gate_local"
@@ -91,34 +61,22 @@ def main():
     parameters = {
         "cell_size": 10,
         "chid": "golden_gate_local",
-        "dem_layer": os.path.join(
-            test_path,
-            test_dir,
-            "US_DEM2016_local.tif",
-        ),
+        "dem_layer": os.path.join(test_path,test_dir,"data_layers/US_DEM2016_local.tif"),
         "dem_sampling": 1,
         "export_obst": False,
         "extent": "-122.491206899,-122.481181391,37.827810126,37.833676214 [EPSG:4326]",
         "fds_path": "./fds_geom",
-        "fire_layer": os.path.join(
-            test_path,
-            test_dir,
-            "fire.shx|layername=fire",
-        ),
-        "landuse_layer": os.path.join(
-            test_path,
-            test_dir,
-            "US_200F13_20_local.tif",
-        ),
+        "fire_layer": os.path.join(test_path,test_dir,"fire.shx|layername=fire"),
+        "landuse_layer": os.path.join(test_path,test_dir,"data_layers/US_200F13_20_local.tif"),
         "landuse_type_filepath": "./Landfire.gov_F13.csv",
         "nmesh": 4,
         "origin": "-2279076.207440,1963675.963121 [EPSG:5070]",
         "sampling_layer": "TEMPORARY_OUTPUT",
-        "tex_layer": "crs=EPSG:3857&format&type=xyz&url=https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&zmax=19&zmin=0",
+        "tex_layer": os.path.join(test_path,test_dir,"data_layers/OpenStreetMap.tif"),
         "tex_pixel_size": 1,
         "wind_filepath": "./wind.csv",
     }
-
+    
     test(
         project=project,
         test_name=test_name,
@@ -128,7 +86,41 @@ def main():
         algorithm=algorithm,
         parameters=parameters,
     )
-
+    
+    # Test
+    test_name = "Export OBST from cern_meyrin"
+    test_dir = "test_cern_meyrin"
+    test_filename = "cern_meyrin.qgs"
+    parameters = {
+        "cell_size": 1,
+        "chid": "cern_meyrin",
+        "dem_layer": os.path.join(test_path,test_dir,"data_layers/dem_layer.tif"),
+        "dem_sampling": 2,
+        "export_obst": True,
+        "extent": "6.048008498,6.049552799,46.232493265,46.233460112 [EPSG:4326]",
+        "fds_path": "./fds_obst",
+        "fire_layer": None,
+        "landuse_layer": None,
+        "landuse_type_filepath": "",
+        "nmesh": 4,
+        "origin": None,
+        "sampling_layer": "TEMPORARY_OUTPUT",
+        "tex_layer": None,
+        "tex_pixel_size": 0.1,
+        "wind_filepath": "",
+    }
+    
+    test(
+        project=project,
+        test_name=test_name,
+        test_path=test_path,
+        test_dir=test_dir,
+        test_filename=test_filename,
+        algorithm=algorithm,
+        parameters=parameters,
+    )
+    
+    
     # Test
 
     test_name = "Export OBST from test_golden_gate_local"
@@ -137,30 +129,18 @@ def main():
     parameters = {
         "cell_size": 10,
         "chid": "golden_gate_local",
-        "dem_layer": os.path.join(
-            test_path,
-            test_dir,
-            "US_DEM2016_local.tif",
-        ),
+        "dem_layer": os.path.join(test_path,test_dir,"data_layers/US_DEM2016_local.tif"),
         "dem_sampling": 1,
         "export_obst": True,
         "extent": "-122.491206899,-122.481181391,37.827810126,37.833676214 [EPSG:4326]",
         "fds_path": "./fds_obst",
-        "fire_layer": os.path.join(
-            test_path,
-            test_dir,
-            "fire.shx|layername=fire",
-        ),
-        "landuse_layer": os.path.join(
-            test_path,
-            test_dir,
-            "US_200F13_20_local.tif",
-        ),
+        "fire_layer": os.path.join(test_path,test_dir,"fire.shx|layername=fire"),
+        "landuse_layer": os.path.join(test_path,test_dir,"data_layers/US_200F13_20_local.tif"),
         "landuse_type_filepath": "./Landfire.gov_F13.csv",
         "nmesh": 4,
         "origin": "-2279076.207440,1963675.963121 [EPSG:5070]",
         "sampling_layer": "TEMPORARY_OUTPUT",
-        "tex_layer": "crs=EPSG:3857&format&type=xyz&url=https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&zmax=19&zmin=0",
+        "tex_layer": os.path.join(test_path,test_dir,"data_layers/OpenStreetMap.tif"),
         "tex_pixel_size": 1,
         "wind_filepath": "./wind.csv",
     }
