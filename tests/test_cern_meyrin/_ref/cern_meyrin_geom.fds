@@ -11,7 +11,7 @@
 ! Landuse type file: <none>
 ! Wind file: <none>
 
-&HEAD CHID='cern_meyrin' TITLE='Description of cern_meyrin' /
+&HEAD CHID='cern_meyrin_geom' TITLE='Description of cern_meyrin_geom' /
 
 ! MISC LEVEL_SET_MODE parameter
 ! 1: Wind not affected by the terrain. No fire.

@@ -1,8 +1,9 @@
-import os, difflib, filecmp, tempfile
+import os, difflib, filecmp, tempfile, glob
 
 from qgis.core import QgsProject
 from qgis import processing
 from qgis.utils import iface
+from qgis.core import QgsApplication
 
 try:
     import git
@@ -19,19 +20,19 @@ def main():
     test_path = "tests/"
     algorithm = "Export to NIST FDS:Export terrain"
     project = QgsProject.instance()
-    print(algorithm)
+    
     # Test
     test_name = "Export GEOM from cern_meyrin"
     test_dir = "test_cern_meyrin"
     test_filename = "cern_meyrin.qgs"
     parameters = {
         "cell_size": 1,
-        "chid": "cern_meyrin",
+        "chid": "cern_meyrin_geom",
         "dem_layer": os.path.join(test_path,test_dir,"data_layers/dem_layer.tif"),
         "dem_sampling": 2,
         "export_obst": False,
         "extent": "6.048008498,6.049552799,46.232493265,46.233460112 [EPSG:4326]",
-        "fds_path": "./fds_geom",
+        "fds_path": os.path.join(test_path, test_dir,"output"),
         "fire_layer": None,
         "landuse_layer": None,
         "landuse_type_filepath": "",
@@ -41,6 +42,7 @@ def main():
         "tex_layer": None,
         "tex_pixel_size": 0.1,
         "wind_filepath": "",
+        "addIntermediateLayersToQgis": True,
     }
     
     test(
@@ -52,6 +54,12 @@ def main():
         algorithm=algorithm,
         parameters=parameters,
     )
+    
+    project.removeAllMapLayers()
+    project.clear()
+    QgsApplication.processEvents()
+    
+    project = QgsProject.instance()
     
     # Test
 
@@ -60,12 +68,12 @@ def main():
     test_filename = "golden_gate_local.qgs"
     parameters = {
         "cell_size": 10,
-        "chid": "golden_gate_local",
+        "chid": "golden_gate_local_geom",
         "dem_layer": os.path.join(test_path,test_dir,"data_layers/US_DEM2016_local.tif"),
         "dem_sampling": 1,
         "export_obst": False,
         "extent": "-122.491206899,-122.481181391,37.827810126,37.833676214 [EPSG:4326]",
-        "fds_path": "./fds_geom",
+        "fds_path": os.path.join(test_path, test_dir,"output"),
         "fire_layer": os.path.join(test_path,test_dir,"fire.shx|layername=fire"),
         "landuse_layer": os.path.join(test_path,test_dir,"data_layers/US_200F13_20_local.tif"),
         "landuse_type_filepath": "./Landfire.gov_F13.csv",
@@ -75,6 +83,7 @@ def main():
         "tex_layer": os.path.join(test_path,test_dir,"data_layers/OpenStreetMap.tif"),
         "tex_pixel_size": 1,
         "wind_filepath": "./wind.csv",
+        "addIntermediateLayersToQgis": True,
     }
     
     test(
@@ -87,18 +96,24 @@ def main():
         parameters=parameters,
     )
     
+    project.removeAllMapLayers()
+    project.clear()
+    QgsApplication.processEvents()
+    
+    project = QgsProject.instance()
+    
     # Test
     test_name = "Export OBST from cern_meyrin"
     test_dir = "test_cern_meyrin"
     test_filename = "cern_meyrin.qgs"
     parameters = {
         "cell_size": 1,
-        "chid": "cern_meyrin",
+        "chid": "cern_meyrin_obst",
         "dem_layer": os.path.join(test_path,test_dir,"data_layers/dem_layer.tif"),
         "dem_sampling": 2,
         "export_obst": True,
         "extent": "6.048008498,6.049552799,46.232493265,46.233460112 [EPSG:4326]",
-        "fds_path": "./fds_obst",
+        "fds_path": os.path.join(test_path, test_dir,"output"),
         "fire_layer": None,
         "landuse_layer": None,
         "landuse_type_filepath": "",
@@ -108,6 +123,7 @@ def main():
         "tex_layer": None,
         "tex_pixel_size": 0.1,
         "wind_filepath": "",
+        "addIntermediateLayersToQgis": True,
     }
     
     test(
@@ -120,6 +136,10 @@ def main():
         parameters=parameters,
     )
     
+    project.removeAllMapLayers()
+    project.clear()
+    QgsApplication.processEvents()
+    project = QgsProject.instance()
     
     # Test
 
@@ -128,12 +148,12 @@ def main():
     test_filename = "golden_gate_local.qgs"
     parameters = {
         "cell_size": 10,
-        "chid": "golden_gate_local",
+        "chid": "golden_gate_local_obst",
         "dem_layer": os.path.join(test_path,test_dir,"data_layers/US_DEM2016_local.tif"),
         "dem_sampling": 1,
         "export_obst": True,
         "extent": "-122.491206899,-122.481181391,37.827810126,37.833676214 [EPSG:4326]",
-        "fds_path": "./fds_obst",
+        "fds_path": os.path.join(test_path, test_dir,"output"),
         "fire_layer": os.path.join(test_path,test_dir,"fire.shx|layername=fire"),
         "landuse_layer": os.path.join(test_path,test_dir,"data_layers/US_200F13_20_local.tif"),
         "landuse_type_filepath": "./Landfire.gov_F13.csv",
@@ -143,6 +163,7 @@ def main():
         "tex_layer": os.path.join(test_path,test_dir,"data_layers/OpenStreetMap.tif"),
         "tex_pixel_size": 1,
         "wind_filepath": "./wind.csv",
+        "addIntermediateLayersToQgis": True,
     }
 
     test(
@@ -154,10 +175,14 @@ def main():
         algorithm=algorithm,
         parameters=parameters,
     )
-
-    # Close
-
+    
+    project.removeAllMapLayers()
     project.clear()
+    QgsApplication.processEvents()
+    project = QgsProject.instance()
+    
+    # Close
+    
     iface.actionExit().trigger()
     os._exit(0)
 
@@ -183,11 +208,13 @@ def test(project, test_name, test_path, test_dir, test_filename, algorithm, para
 
     # Run test
     refdir = parameters["fds_path"]
-    with tempfile.TemporaryDirectory() as tmpdir:
-        parameters["fds_path"] = tmpdir
-        processing.run(algorithm, parameters)
-        refdir = os.path.join(test_path, test_dir, "_ref", refdir)
-        diff_fds_dir(refpath=refdir, fdspath=tmpdir)
+    parameters["fds_path"] = os.path.abspath(parameters['fds_path'])
+    refdir = os.path.abspath(os.path.join(test_path, test_dir, "_ref"))
+    os.system('rm %s/*.fds'%(parameters["fds_path"]))
+    os.system('rm %s/*.bingeom'%(parameters["fds_path"]))
+    os.system('rm %s/*.png'%(parameters["fds_path"]))
+    processing.run(algorithm, parameters)
+    diff_fds_dir(parameters['chid'], refpath=refdir, fdspath=parameters["fds_path"])
 
 
 def echo(name, success, log):
@@ -197,18 +224,17 @@ def echo(name, success, log):
         print(f"{bcolors.FAIL}{name}: FAIL{bcolors.ENDC}\n{log}")
 
 
-def diff_fds_dir(refpath, fdspath):
-    for f in os.scandir(refpath):
-        name = f"Diff: {f.name}"
-        filepath1 = f.path
-        filepath2 = os.path.join(fdspath, f.name)
-
-        if f.name.endswith(".bingeom") or f.name.endswith(".png"):
-            success, log = _diff_binary_files(filepath1, filepath2)
-        elif f.name.endswith(".fds"):
-            success, log = _diff_fds_files(filepath1, filepath2)
+def diff_fds_dir(chid, refpath, fdspath):
+    refFiles = glob.glob(os.path.join(refpath, chid+'*'))
+    for f in refFiles:
+        name = f.split(os.sep)[-1]
+        fdsFile = os.path.join(fdspath, name)
+        if name.endswith(".bingeom") or name.endswith(".png"):
+            success, log = _diff_binary_files(f, fdsFile)
+        elif name.endswith(".fds"):
+            success, log = _diff_fds_files(f, fdsFile)
         else:
-            success, log = False, f"Unrecognized file type: {f.name}"
+            success, log = False, f"Unrecognized file type: {name}"
         echo(name, success, log)
 
 
