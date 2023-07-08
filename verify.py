@@ -22,6 +22,7 @@ def main():
     logfile = "log.txt"
     with open(logfile, 'w') as f:
         f.write('Starting qgis2fds verification\n')
+    
     # Test
     project = QgsProject.instance()
     test_name = "Export GEOM from cern_meyrin"
@@ -185,7 +186,88 @@ def main():
     project.removeAllMapLayers()
     project.clear()
     QgsApplication.processEvents()
+    
+    # Test
     project = QgsProject.instance()
+    test_name = "Export GEOM from test_golden_gate_remote"
+    test_dir = "test_golden_gate_remote"
+    test_filename = "golden_gate_remote.qgs"
+    parameters = {
+        "cell_size": 10,
+        "pixel_size": 30,
+        "chid": "golden_gate_remote_geom",
+        "dem_layer": 'dpiMode=7&identifier=landfire_wcs:LC20_Elev_220&url=https://edcintl.cr.usgs.gov/geoserver/landfire_wcs/us_topo/wcs',
+        "dem_sampling": 1,
+        "export_obst": False,
+        "extent": "-122.509448609,-122.467825037,37.817233198,37.849753575 [EPSG:4326]",
+        "fds_path": os.path.join(test_path, test_dir,"output"),
+        "fire_layer": os.path.join(test_path,test_dir,"data_layers","fire.shx|layername=fire"),
+        "landuse_layer": 'dpiMode=7&identifier=landfire_wcs:LC22_F13_220&url=https://edcintl.cr.usgs.gov/geoserver/landfire_wcs/us_220/wcs',
+        "landuse_type_filepath": "Landfire.gov_F13.csv",
+        "nmesh": 4,
+        "origin": "-2279076.207440,1963675.963121 [EPSG:5070]",
+        "sampling_layer": "TEMPORARY_OUTPUT",
+        "tex_layer": 'crs=EPSG:3857&format&type=xyz&url=https://mt1.google.com/vt/lyrs%3Ds%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&zmax=19&zmin=0',
+        "tex_pixel_size": 1,
+        "wind_filepath": "wind.csv",
+        "addIntermediateLayersToQgis": True,
+    }
+    
+    test(
+        project=project,
+        test_name=test_name,
+        test_path=test_path,
+        test_dir=test_dir,
+        test_filename=test_filename,
+        algorithm=algorithm,
+        parameters=parameters,
+        logfile=logfile,
+    )
+    
+    project.removeAllMapLayers()
+    project.clear()
+    QgsApplication.processEvents()
+    
+    # Test
+    project = QgsProject.instance()
+    test_name = "Export OBST from test_golden_gate_remote"
+    test_dir = "test_golden_gate_remote"
+    test_filename = "golden_gate_remote.qgs"
+    parameters = {
+        "cell_size": 10,
+        "pixel_size": 30,
+        "chid": "golden_gate_remote_obst",
+        "dem_layer": 'dpiMode=7&identifier=landfire_wcs:LC20_Elev_220&url=https://edcintl.cr.usgs.gov/geoserver/landfire_wcs/us_topo/wcs',
+        "dem_sampling": 1,
+        "export_obst": True,
+        "extent": "-122.509448609,-122.467825037,37.817233198,37.849753575 [EPSG:4326]",
+        "fds_path": os.path.join(test_path, test_dir,"output"),
+        "fire_layer": os.path.join(test_path,test_dir,"data_layers","fire.shx|layername=fire"),
+        "landuse_layer": 'dpiMode=7&identifier=landfire_wcs:LC22_F13_220&url=https://edcintl.cr.usgs.gov/geoserver/landfire_wcs/us_220/wcs',
+        "landuse_type_filepath": "Landfire.gov_F13.csv",
+        "nmesh": 4,
+        "origin": "-2279076.207440,1963675.963121 [EPSG:5070]",
+        "sampling_layer": "TEMPORARY_OUTPUT",
+        "tex_layer": 'crs=EPSG:3857&format&type=xyz&url=https://mt1.google.com/vt/lyrs%3Ds%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&zmax=19&zmin=0',
+        "tex_pixel_size": 1,
+        "wind_filepath": "wind.csv",
+        "addIntermediateLayersToQgis": True,
+    }
+    
+    test(
+        project=project,
+        test_name=test_name,
+        test_path=test_path,
+        test_dir=test_dir,
+        test_filename=test_filename,
+        algorithm=algorithm,
+        parameters=parameters,
+        logfile=logfile,
+    )
+    
+    project.removeAllMapLayers()
+    project.clear()
+    QgsApplication.processEvents()
     
     # Close
     
