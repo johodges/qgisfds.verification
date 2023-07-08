@@ -109,6 +109,7 @@ def main():
     test_filename = "golden_gate_local.qgs"
     parameters = {
         "cell_size": 10,
+        "pixel_size": 30,
         "chid": "golden_gate_local_geom",
         "dem_layer": os.path.join(test_path,test_dir,"data_layers","US_DEM2016_local.tif"),
         "dem_sampling": 1,
@@ -149,6 +150,7 @@ def main():
     test_filename = "golden_gate_local.qgs"
     parameters = {
         "cell_size": 10,
+        "pixel_size": 30,
         "chid": "golden_gate_local_obst",
         "dem_layer": os.path.join(test_path,test_dir,"data_layers","US_DEM2016_local.tif"),
         "dem_sampling": 1,
