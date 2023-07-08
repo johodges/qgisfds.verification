@@ -22,7 +22,7 @@
 &MISC ORIGIN_LAT=37.8323714
       ORIGIN_LON=-122.4839643
       NORTH_BEARING=0.
-      TERRAIN_IMAGE='golden_gate_local_tex.png'
+      TERRAIN_IMAGE='golden_gate_local_obst_tex.png'
       LEVEL_SET_MODE=1 /
 
 &TIME T_END=0. /
