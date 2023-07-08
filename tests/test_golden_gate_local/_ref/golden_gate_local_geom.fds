@@ -91,7 +91,7 @@
 ! Terrain (1254 verts, 2368 faces)
 &GEOM ID='Terrain'
       SURF_ID='NA','A01','A02','A03','A04','A05','A06','A07','A08','A09','A10','A11','A12','A13','Urban','Snow-Ice','Agricolture','Water','Barren','Ignition','Burned'
-      BINARY_FILE='golden_gate_local_terrain.bingeom'
+      BINARY_FILE='golden_gate_local_geom_terrain.bingeom'
       IS_TERRAIN=T EXTEND_TERRAIN=F /
 
 &TAIL /

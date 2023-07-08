@@ -80,7 +80,7 @@
 ! Terrain (14976 verts, 29464 faces)
 &GEOM ID='Terrain'
       SURF_ID='INERT'
-      BINARY_FILE='cern_meyrin_terrain.bingeom'
+      BINARY_FILE='cern_meyrin_geom_terrain.bingeom'
       IS_TERRAIN=T EXTEND_TERRAIN=F /
 
 &TAIL /
