@@ -29,6 +29,7 @@ def main():
     test_filename = "cern_meyrin.qgs"
     parameters = {
         "cell_size": 1,
+        "pixel_size": 1,
         "chid": "cern_meyrin_geom",
         "dem_layer": os.path.join(test_path,test_dir,"data_layers","dem_layer.tif"),
         "dem_sampling": 2,
@@ -69,6 +70,7 @@ def main():
     test_filename = "cern_meyrin.qgs"
     parameters = {
         "cell_size": 1,
+        "pixel_size": 1,
         "chid": "cern_meyrin_obst",
         "dem_layer": os.path.join(test_path,test_dir,"data_layers","dem_layer.tif"),
         "dem_sampling": 2,
