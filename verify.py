@@ -298,9 +298,9 @@ def test(project, test_name, test_path, test_dir, test_filename, algorithm, para
     refdir = parameters["fds_path"]
     parameters["fds_path"] = os.path.abspath(parameters['fds_path'])
     refdir = os.path.abspath(os.path.join(test_path, test_dir, "_ref"))
-    os.system('rm %s/*.fds'%(parameters["fds_path"]))
-    os.system('rm %s/*.bingeom'%(parameters["fds_path"]))
-    os.system('rm %s/*.png'%(parameters["fds_path"]))
+    os.system('rm %s/%s*.fds'%(parameters["fds_path"], parameters['chid']))
+    os.system('rm %s/%s*.bingeom'%(parameters["fds_path"], parameters['chid']))
+    os.system('rm %s/%s*.png'%(parameters["fds_path"], parameters['chid']))
     with open(logfile, 'a') as f:
         f.write('\nStarting ' + parameters['chid'])
     processing.run(algorithm, parameters)
